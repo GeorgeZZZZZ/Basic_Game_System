@@ -22,13 +22,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166266}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 1, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!119 &11939280
 Projector:
   m_ObjectHideFlags: 1
@@ -38,7 +38,7 @@ Projector:
   m_Enabled: 1
   serializedVersion: 2
   m_NearClipPlane: 0.1
-  m_FarClipPlane: 1
+  m_FarClipPlane: 3
   m_FieldOfView: 60
   m_AspectRatio: 1
   m_Orthographic: 1
@@ -46,7 +46,7 @@ Projector:
   m_Material: {fileID: 2100000, guid: c635692e6f2b73e4cb51502e5bdf706f, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 4294964223
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

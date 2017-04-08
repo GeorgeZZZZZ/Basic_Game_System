@@ -25,7 +25,7 @@ namespace Pathfinding {
 		/** Animation component.
 		 * Should hold animations "awake" and "forward"
 		 */
-		public Animation anim;
+		//public Animation anim;
 
 		/** Minimum velocity for moving */
 		public float sleepVelocity = 0.4F;
@@ -39,16 +39,16 @@ namespace Pathfinding {
 
 		public new void Start () {
 			//Prioritize the walking animation
-			anim["forward"].layer = 10;
+			//anim["forward"].layer = 10;
 
 			//Play all animations
-			anim.Play("awake");
-			anim.Play("forward");
+			//anim.Play("awake");
+			//anim.Play("forward");
 
 			//Setup awake animations properties
-			anim["awake"].wrapMode = WrapMode.Clamp;
-			anim["awake"].speed = 0;
-			anim["awake"].normalizedTime = 1F;
+			//anim["awake"].wrapMode = WrapMode.Clamp;
+			//anim["awake"].speed = 0;
+			//anim["awake"].normalizedTime = 1F;
 
 			//Call Start in base script (AIPath)
 			base.Start();
@@ -113,16 +113,16 @@ namespace Pathfinding {
 
 			if (velocity.sqrMagnitude <= sleepVelocity*sleepVelocity) {
 				//Fade out walking animation
-				anim.Blend("forward", 0, 0.2F);
+				//anim.Blend("forward", 0, 0.2F);
 			} else {
 				//Fade in walking animation
-				anim.Blend("forward", 1, 0.2F);
+				//anim.Blend("forward", 1, 0.2F);
 
 				//Modify animation speed to match velocity
-				AnimationState state = anim["forward"];
+				//AnimationState state = anim["forward"];
 
 				float speed = relVelocity.z;
-				state.speed = speed*animationSpeed;
+				//state.speed = speed*animationSpeed;
 			}
 		}
 	}

@@ -57,7 +57,7 @@ public class HealthControl : MonoBehaviour {
 		if (Health_Slider != null)
 			Health_Slider.value = Current_Health;
 
-		anim.SetTrigger ("IsDamage");
+		anim.SetTrigger ("IsDammage");
 
 		if (Current_Health <= 0 && !Die) {
 			Death ();
@@ -69,9 +69,9 @@ public class HealthControl : MonoBehaviour {
 		timer = 5f;
 		transform.GetChild (0).gameObject.SetActive (false);
 
-		if (GetComponent ("Player_Camera_Controller_RTS_RPG_AstarPathfing_Project") != null) {
-			if (GetComponent <Player_Camera_Controller_RTS_RPG_AstarPathfing_Project> ().enabled != false)
-				GetComponent <Player_Camera_Controller_RTS_RPG_AstarPathfing_Project> ().enabled = false;
+		if (GetComponent ("Player_Controller_RTS_RPG_AstarPathfing_Project") != null) {
+			if (GetComponent <Player_Controller_RTS_RPG_AstarPathfing_Project> ().enabled != false)
+				GetComponent <Player_Controller_RTS_RPG_AstarPathfing_Project> ().enabled = false;
 		} else if (GetComponent ("Enemy_Controller_AstarPathfinding_Project") != null) {
 			if (GetComponent <Enemy_Controller_AstarPathfinding_Project> ().enabled != false)
 				GetComponent <Enemy_Controller_AstarPathfinding_Project> ().enabled = false;

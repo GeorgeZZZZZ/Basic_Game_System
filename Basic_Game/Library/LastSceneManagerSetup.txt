@@ -2,3 +2,9 @@ sceneSetups:
 - path: Assets/Scenes/Basic_Game_Test_000.unity
   isLoaded: 1
   isActive: 1
+- path: Assets/HelpAssests/Plugins/RootMotion/PuppetMaster/_DEMOS/Melee Grab.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/HelpAssests/Plugins/RootMotion/PuppetMaster/_DEMOS/Prop.unity
+  isLoaded: 0
+  isActive: 0
